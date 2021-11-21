@@ -23,14 +23,14 @@
 
 .logo {
   width: 183px;
-  height: 32px;
   z-index: 3;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
+  height: 32px;
 }
 
 .header__title {
@@ -57,6 +57,10 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+}
+
+.header__link:hover {
+  opacity: .7;
 }
 
 .header__main-illustration {
@@ -176,12 +180,6 @@
   margin: 20px 0 0 0;
 }
 
-.table__quote {
-  font-size: 18px;
-  line-height: 1.2em;
-  margin: 20px 0 0 0;
-}
-
 /*third section*/
 
 .feynman {
@@ -219,6 +217,10 @@
   color: #2f80ed;
 }
 
+.feynman__link:hover {
+  opacity: .7;
+}
+
 /*fourth section*/
 
 .kaufman {
@@ -227,13 +229,17 @@
   flex-direction: column;
   align-items: center;
   background-color: #1f1f1f;
-  color: white;
   overflow: hidden;
 }
 
 .section-title_theme_dark {
   margin-top: 90px;
   z-index: 1;
+  color: white;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
 }
 
 .table__theme_dark {
@@ -253,6 +259,8 @@
   position: absolute;
   top: 0;
   right: -210px;
+  background: url(../images/kaufman-triangle.svg) no-repeat top left;
+  background-size: contain;
 }
 
 /*footer*/
@@ -271,7 +279,7 @@
   margin: 60px auto 40px auto;
 }
 
-.footer__column_content{
+.footer__column_content_copyright{
   display: flex;
   flex-direction: column;
   flex-basis: 711px;
@@ -302,18 +310,46 @@
 }
 
 .footer__link {
+  display: flex;
   text-decoration: none;
   color: white;
   font-size: 18px;
   line-height: 30px;
+  align-content: center;
 }
 
-.sosial__link {
+.footer__link:hover {
+  opacity: .7;
+}
+
+.footer__sosial_icon {
+  padding-right: 10px;
+}
+
+/*
+
+Оставил код с переделками от предыдущего ревью.
+
+Прошу ответить на вопрос комментарием: 
+в этом варианте нейминг классов по бэму?
+footer__link_sosial тут как модификатор
+footer__link_sosial_instagram тут ключ значение
+
+и второй вопрос:
+я реализовал nav как элемент футера
+а если мне надо было его блоком то код имел вид:
+<nav class="menu footer__menu">
+    <ul class="menu__column-links footer__column-links">
+Верно?
+
+
+
+.footer__link_sosial {
   position: relative;
   padding-left: 26px;
 }
 
-.sosial__link_facebook::before {
+.footer__link_sosial::before {
   position: absolute;
   left: 0;
   top: 2px;
@@ -321,27 +357,18 @@
   display: block;
   width: 16px;
   height: 16px;
+}
+
+.footer__link_sosial_facebook::before {
   background: url(../images/facebook_color_white.svg) no-repeat left top;
 }
 
-.sosial__link_vkontakte::before {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
+.footer__link_sosial_vkontakte::before {
+  
   background: url(../images/vk_color_white.svg) no-repeat left top;
 }
 
-.sosial__link_instagram::before {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
+.footer__link_sosial_instagram::before {
+  
   background: url(../images/instagram_color_white.svg) no-repeat left top;
-}
+} */
