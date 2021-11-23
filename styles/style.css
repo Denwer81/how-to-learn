@@ -322,53 +322,6 @@
   opacity: .7;
 }
 
-.footer__sosial_icon {
+.footer__sosial-icon {
   padding-right: 10px;
 }
-
-/*
-
-Оставил код с переделками от предыдущего ревью.
-
-Прошу ответить на вопрос комментарием: 
-в этом варианте нейминг классов по бэму?
-footer__link_sosial тут как модификатор
-footer__link_sosial_instagram тут ключ значение
-
-и второй вопрос:
-я реализовал nav как элемент футера
-а если мне надо было его блоком то код имел вид:
-<nav class="menu footer__menu">
-    <ul class="menu__column-links footer__column-links">
-Верно?
-
-
-
-.footer__link_sosial {
-  position: relative;
-  padding-left: 26px;
-}
-
-.footer__link_sosial::before {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-}
-
-.footer__link_sosial_facebook::before {
-  background: url(../images/facebook_color_white.svg) no-repeat left top;
-}
-
-.footer__link_sosial_vkontakte::before {
-  
-  background: url(../images/vk_color_white.svg) no-repeat left top;
-}
-
-.footer__link_sosial_instagram::before {
-  
-  background: url(../images/instagram_color_white.svg) no-repeat left top;
-} */
