@@ -258,6 +258,10 @@
 
 /*third section*/
 
+.content__feynman {
+  margin-bottom: 100px;
+}
+
 .feynman {
   display: flex;
   flex-direction: column;
@@ -317,6 +321,7 @@
 
 .section-subtitle_theme_dark {
   color: white;
+  z-index: 1;
 }
 
 .table__theme_dark {
@@ -420,5 +425,5 @@
 }
 
 * {
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
