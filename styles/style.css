@@ -187,7 +187,7 @@
   flex-direction: column;
   position: relative;
   align-items: center;
-  height: 890px;
+  min-height: 890px;
   background: url(../images/feynman.png) no-repeat left bottom;
   background-color: #f2f2f2;
 }
