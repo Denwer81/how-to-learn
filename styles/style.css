@@ -157,6 +157,7 @@
 .cards__image {
   width: 160px;
   height: 160px;
+  background-size: contain;
   border-radius: 50%;
   margin: 60px 40px 43px;
 }
@@ -166,7 +167,7 @@
   font-weight: bold;
   line-height: 1.15em;
   text-align: center;
-  margin-bottom: 0 0 16px 0;
+  margin: 0 0 16px 0;
 }
 .cards__description {
   font-size: 18px;
@@ -313,6 +314,7 @@
 
 .khan__container {
   width: 80%;
+  margin-top: 105px;
 }
 
 .khan__author {
@@ -422,6 +424,36 @@
   background-size: contain;
 }
 
+/* logo zone */
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 217px 0;
+}
+
+.resources__logo-zone {
+  display: flex;
+  width: 1100px;
+  margin-top: 80px;
+}
+
+.resources__link{
+  transition: .3s ease;
+}
+
+.resources__link:hover {
+  opacity: .6;
+
+}
+
+.resources__logo {
+  display: block;
+  width: 270px;
+  height: 38px;
+}
+
 /*footer*/
 
 .footer {
@@ -501,6 +533,6 @@
   }
 }
 
-* {
-  /* border: 1px solid red;
-} */
+/* * {
+   border: 1px solid red;
+}  */
