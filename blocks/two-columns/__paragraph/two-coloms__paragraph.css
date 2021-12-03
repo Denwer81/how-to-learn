@@ -1,7 +1,0 @@
-.two-coloms__paragraph {
-  margin: 0;
-}
-
-.two-coloms__paragraph:nth-child(2) {
-  margin: 30px 0;
-}
